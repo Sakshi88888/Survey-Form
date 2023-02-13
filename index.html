@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C://Users//saksh//Documents//VSCodeFiles//Web Development (iLink)//Survey//style.css">
+    <title>Survey Form</title>
+
+    <style>
+
+input[type=text], select {
+  width: 35%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 17px;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+input[type=email], select {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block; 
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: 17px;
+  box-sizing: border-box; 
+  text-align: justify;
+}
+
+input[type=date], select { 
+
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  color: gray;
+
+}
+
+input[type=radio], select { 
+
+    accent-color: blue;
+
+
+
+
+
+}
+
+textarea{
+
+
+  width: 100%;
+  height: 150px;
+  padding: 15px 20px;
+  margin-top: 17px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+
+
+
+}
+label {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+
+
+body{
+
+    /*background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    /*background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+   
+
+      background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+}
+
+  
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="container" style="width: 500px; padding-top: 10%; margin:auto; border-radius: 8px; background-color: whitesmoke;
+    ">
+
+    <div>
+        <h2 style="padding-bottom: 9%; text-align: center;padding-top: 1%; font-family: Georgia, 'Times New Roman', Times, serif; font-style:italic; font-size: 30px;">Career Interest Survey Form</h2>
+        
+    </div>
+
+        <div id="icon">
+            <img src="surveyor.png"  style="margin-top: 5px; margin-left: 40%; padding-bottom: 20px; max-width: 100px; max-height: 100px; min-width: 40px;  min-height: 40px;">
+            
+           
+        </div>
+
+        <div id="survey-content">
+            <p style="padding-bottom: 5%; text-align:center;font-family: Georgia, 'Times New Roman', Times, serif ;font-size: 17px; color: #fb5523;">Complete our Career Interest Survey to help you find the career best suited for you,based on your personal profile.<br> This will help us evaluate your opportunities and give you an informative report.</p>
+        </div>
+
+        <div class="form-container" style=" border-radius: 5px; background-color: #11224d;padding: 20px; color: white;">
+          <form action="">
+
+            <label for="name" >Name:</label>
+            <input type="text" id="f-name" name="firstname" placeholder="First.." required>
+            <input type="text" id="l-name" name="lastname" placeholder="Last.." required> <br><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" id="emailid" name="e-mail" placeholder="abc@gmail.com" required> <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="DOB" name="dateofbirth"  required> <br><br>
+
+            <label for="gender">Gender: </label><br>
+            <input type="radio" id="radio1" name="radio-button-1">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="radio2" name="radio-button-1">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="radio3" name="radio-button-1">
+            <label for="other">Other</label><br><br>
+
+            
+
+
+            <label for="question1">What is your current career? Does it match your dream career?</label><br>
+
+            <textarea id="q1" name="q-first" rows="7" cols="50" required></textarea><br><br>
+
+            <!-- Question- 2  -->
+
+
+            <label for="question2">What are your career goals as of now? </label><br>
+
+            <textarea id="q2" name="q-second" rows="7" cols="50" required></textarea><br><br>
+
+
+            <!-- Question- 3  -->
+
+
+            <label for="question3">If you had the chance to change your current career field, would you do it? </label><br><br>
+            <input type="radio" id="q3" name="radiofor-q3">
+            <label for="question-3">Yes</label>
+
+            <input type="radio" id="q3" name="radiofor-q3">
+            <label for="question-3">No</label><br><br>
+
+            <!-- Question-4 -->
+
+            
+            <label for="question4">Fields you are interested in: </label><br><br>
+
+        
+            <input type="checkbox" id="q4-1" name="check-for-q4-1">
+            <label for="question-4-1">Mathematics</label><br>
+
+            <input type="checkbox" id="q4-2" name="check-for-q4-2">
+            <label for="question-4-2">IT Programming</label><br>
+
+            <input type="checkbox" id="q4-3" name="check-for-q4-3">
+            <label for="question-4-3">Politics</label><br>
+
+            <input type="checkbox" id="q4-4" name="check-for-q4-4">
+            <label for="question-4-4">Marketing</label><br>
+
+            <input type="checkbox" id="q4-5" name="check-for-q4-5">
+            <label for="question-4-5">Journalism</label><br>
+            
+
+            
+            
+            <input type="checkbox" id="q4-6" name="check-for-q4-6">
+            <label for="question-4-6">Law</label><br>
+
+            <input type="checkbox" id="q4-7" name="check-for-q4-7">
+            <label for="question-4-7">Teaching</label><br>
+
+            <input type="checkbox" id="q4-8" name="check-for-q4-8">
+            <label for="question-4-8">Business</label><br>
+
+            <input type="checkbox" id="q4-9" name="check-for-q4-9">
+            <label for="question-4-9">Psychology</label><br>
+
+            <input type="checkbox" id="q4-10" name="check-for-q4-10">
+            <label for="question-4-10">Performing Arts</label><br><br>
+            
+
+            
+
+
+            <!-- Question-5 -->
+
+            <label for="question5">Personal Qualities: </label><br><br>
+
+            <input type="checkbox" id="q5-1" name="check-for-q5-1">
+            <label for="question-5-1">Fast Learner</label><br>
+
+            <input type="checkbox" id="q5-2" name="check-for-q5-2">
+            <label for="question-5-2">Organized</label><br>
+
+            <input type="checkbox" id="q5-3" name="check-for-q5-3">
+            <label for="question-5-3">tenacious</label><br>
+
+            <input type="checkbox" id="q5-4" name="check-for-q5-4">
+            <label for="question-5-4">Creative</label><br>
+
+            <input type="checkbox" id="q5-5" name="check-for-q5-5">
+            <label for="question-5-5">Communicative</label><br>
+
+            <input type="checkbox" id="q5-6" name="check-for-q5-6">
+            <label for="question-5-6">Empathetic</label><br>
+
+            <input type="checkbox" id="q5-7" name="check-for-q5-7">
+            <label for="question-5-7">Self-Motivated</label><br>
+
+            <input type="checkbox" id="q5-8" name="check-for-q5-8">
+            <label for="question-5-8">Methodical</label><br>
+
+            <input type="checkbox" id="q5-9" name="check-for-q5-9">
+            <label for="question-5-9">Decision Maker</label><br>
+
+            <input type="checkbox" id="q5-10" name="check-for-q5-10">
+            <label for="question-5-10">Straightforward</label><br><br>
+
+
+            <!-- Question-6 -->
+            <label for="question5">Hobbies: </label><br> <br> 
+
+
+            <input type="checkbox" id="q6-1" name="check-for-q6-1">
+            <label for="question-6-1">Fishing</label><br>
+
+            <input type="checkbox" id="q6-2" name="check-for-q6-2">
+            <label for="question-6-2">Gardening</label><br>
+
+            <input type="checkbox" id="q6-3" name="check-for-q6-3">
+            <label for="question-6-3">Painting</label><br>
+
+            <input type="checkbox" id="q6-4" name="check-for-q6-4">
+            <label for="question-6-4">Mountain Hiking</label><br>
+
+            <input type="checkbox" id="q6-5" name="check-for-q6-5">
+            <label for="question-6-5">Painting<label><br>
+
+            <input type="checkbox" id="q6-6" name="check-for-q6-6">
+            <label for="question-6-6">Dancing</label><br>
+
+            <input type="checkbox" id="q6-7" name="check-for-q6-7">
+            <label for="question-6-7">Cooking</label><br>
+
+            <input type="checkbox" id="q6-8" name="check-for-q6-8">
+            <label for="question-6-8">Programming</label><br>
+
+            <input type="checkbox" id="q6-9" name="check-for-q6-9">
+            <label for="question-6-9">Listening to Music</label><br>
+
+            <input type="checkbox" id="q6-10" name="check-for-q6-10">
+            <label for="question-6-10">Networking</label><br><br>
+
+
+         
+            <button  style="margin-left: 35%;font-family: 'Gill Sans' ;height: 35px; background-color: #fb5523 ;border-radius: 15px; color: white; border: none; text-align: center; display: inline-block;" type="submit" formaction="thankyou.html" target="_blank">Submit the Career Survey</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </form>
+          </label></label></div>
+        
+
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+</body>
+</html>
